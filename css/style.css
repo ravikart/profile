@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #666; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 400;
+  line-height: 1.75; }
+
+.header {
+  display: flex;
+  height: 4.5rem;
+  justify-content: space-between;
+  align-items: center; }
+  .header__logo {
+    height: 3.5rem;
+    display: flex;
+    align-items: center; }
+  .header__logo > * {
+    margin-right: 10px; }
+  .header__logo > img {
+    width: 60px;
+    height: 60px; }
+  .header__navbar__ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap; }
+  .header__navbar_item {
+    margin: 0 10px; }
+  .header__navbar_item:hover {
+    color: blue;
+    cursor: pointer; }
+
+.main-class__home {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 16px; }
+
+.main-class__intro-image {
+  flex: 0 0 390px; }
+
+.main-class__intro {
+  margin-right: 20px;
+  flex: 1; }
+
+.main-class h1 {
+  font-size: 2rem; }
+
+.main-class_image_container {
+  width: 390px;
+  height: 300px; }
+  .main-class_image_container > img {
+    width: 100%;
+    height: 100%; }
+
+.social-icon__brand {
+  height: 40px;
+  width: 30px;
+  fill: #666; }
+
+@media (max-width: 468px) {
+  .container {
+    margin: 0; }
+  .main-class {
+    margin: 0; } }
+
+.main-class__education {
+  padding: 20px;
+  padding-top: 0px; }
+  .main-class__education_head {
+    margin-bottom: 8px; }
+
+.main-class__experience {
+  padding: 20px;
+  padding-top: 0px; }
+  .main-class__experience_company {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .main-class__experience_ul {
+    margin: 8px 0px; }
+
+.main-class__projects {
+  padding: 20px;
+  padding-top: 0px; }
+  .main-class__projects_overview {
+    margin-top: 8px; }
+
+.main-class__hr {
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 5px; }
+
+.main-class__attendence {
+  padding: 20px;
+  padding-top: 0px; }
+  .main-class__attendence-description {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; }
+  .main-class__attendence-head {
+    margin-bottom: 8px; }
+  .main-class__attendence-description-data {
+    flex: 1;
+    margin-right: 20px; }
+  .main-class__attendence-image {
+    width: 350px;
+    height: 300px;
+    flex: 0 0 350px;
+    margin-top: 0px; }
+    .main-class__attendence-image > img {
+      width: 100%;
+      height: 100%; }
+
+.overall-responsibilites {
+  margin-top: 8px; }
+
+.footer-div {
+  text-align: center;
+  height: 40px;
+  background-color: white;
+  z-index: 200; }
+
+.main-class__skill {
+  padding: 20px;
+  padding-top: 0px; }
+  .main-class__skill_ul {
+    list-style: none;
+    margin-top: 8px; }
+  .main-class__skill_li > div {
+    margin-bottom: 8px; }
+  .main-class__skill_progress {
+    position: relative;
+    top: 0px;
+    height: 20px;
+    width: 350px;
+    border-radius: 100px;
+    border: 1px solid #666; }
+  .main-class__skill_progress-value {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: #0295f0;
+    border-radius: 100px; }
+
+.container {
+  margin: 0 15vw; }
+
+.head_container {
+  position: fixed;
+  width: 100vw;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+  z-index: 2000; }
+
+.main-class {
+  position: relative;
+  top: 4.5rem;
+  margin: 0 15vw; }
+
+.main-class__social {
+  display: flex;
+  justify-content: center; }
+
+.social-icon {
+  margin: 10px; }
+
+@media only screen and (max-width: 768px) {
+  .main-class,
+  .container {
+    margin: 0 3vw; } }
+
+@media only screen and (max-width: 600px) {
+  .main-class__attendence-image {
+    margin-top: 20px; }
+  .main-class,
+  .container {
+    margin: 0 1vw; } }
